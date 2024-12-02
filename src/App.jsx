@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import HospitalDashboard from './components/hospital/HospitalDashboard';
 import PatientDashboard from './components/patient/PatientDashboard';
 import './App.css'
+import LandingPage from './components/LandingPage';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
             <Routes>
               <Route path="/hospital/*" element={<HospitalDashboard />} />
               <Route path="/patient/*" element={<PatientDashboard />} />
-              <Route path="/" element={<HospitalDashboard />} />
+              <Route path="/" element={<LandingPage />} />
             </Routes>
           </main>
         </div>
